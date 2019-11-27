@@ -102,15 +102,6 @@ class P_data(object):
 		self.y = []
 		self.weight = []
 
-	def load_data(self, filename, norm_weight=True):
-		mat = scipy.io.loadmat(filename)
-		self.weight = np.array(mat['network'].toarray())
-		if norm_weight:
-			self.weight = normalize(self.weight, axis=1, norm='l1')
-		self.weight = sparse.csr_matrix(self.weight)
-		self.y = 2.*np.array(mat['group'].toarray())-1.
-		self.id = np.array(range(len(self.y)))
-
 	def split_data(self, train_ratio=.5, valid_ratio=.2, test_ratio=.3):
 		Pid, y = self.id, self.y
 		np.random.shuffle(Pid)
