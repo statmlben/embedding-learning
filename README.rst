@@ -13,10 +13,10 @@ The codes requires:
 - Python
 - NumPy
 - SciPy
-- tensorflow
-- keras
+- Tensorflow
+- Keras
 
-Core code (Keras)
+Core pseudo-code (Keras)
 ~~~~~~~~~~~~~~~~~
 
 .. code-block:: Python
@@ -34,7 +34,7 @@ Core code (Keras)
 		return lam*loss
 
 	def get_model(embedding_dim=10):
-		X = Input(shape=(?,))
+		X = Input(shape=(1,))
 		z = Embedding(d, embedding_dim, embeddings_regularizer=embedding_loss)(X)
 		z = Flatten()(z)
 		## Add your network config there
@@ -46,3 +46,5 @@ Core code (Keras)
 	EL.compile(loss="learning loss here", optimizer=keras.optimizers.Adam(.005), metrics=["accuracy"])
 	EL.fit(x_train, y_train, batch_size=batch_size, epochs=epochs, verbose=1)
 	EL.predict(x_test)
+
+Embedding learning for unstructured data in multiple columns is upgoing.
