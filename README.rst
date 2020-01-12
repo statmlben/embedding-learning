@@ -22,6 +22,10 @@ Core pseudo-code (Keras)
 .. code-block:: Python
 
 	from keras import backend as K
+	import keras
+	from keras.models import Model
+	from keras.layers import Dense, Flatten, Input, Multiply, Reshape, Embedding
+	import tensorflow as tf
 
 	## d: total number of unstrucuted data
 	## lam: tuning parameter for the embedding loss
