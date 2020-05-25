@@ -3,8 +3,6 @@ Embedding learning
 
 This is a demonstration about implements of the paper "Embedding learning" by Ben Dai, Xiaotong Shen and Junhui Wang  in TensorFlow (tensorflow_demo.py) and Keras (keras_demo.py). 
 
-This project was created by `Ben Dai <http://users.stat.umn.edu/~bdai/>`_. If there is any problem and suggestion please contact me via <bdai@umn.edu>.
-
 Dependencies
 ~~~~~~~~~~~~
 
