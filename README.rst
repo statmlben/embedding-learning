@@ -3,17 +3,16 @@ Embedding learning
 
 This is a demonstration about implements of the paper "Embedding learning" by Ben Dai, Xiaotong Shen and Junhui Wang in TensorFlow (tensorflow_demo.py) and Keras (keras_demo.py). 
 
-``` bib
-@article{dai2020embedding,
-  title={Embedding learning},
-  author={Dai, Ben and Shen, Xiaotong and Wang, Junhui},
-  journal={Journal of the American Statistical Association},
-  number={just-accepted},
-  pages={1--36},
-  year={2020},
-  publisher={Taylor \& Francis}
-}
-```
+.. code-block:: bib
+	@article{dai2020embedding,
+	  title={Embedding learning},
+	  author={Dai, Ben and Shen, Xiaotong and Wang, Junhui},
+	  journal={Journal of the American Statistical Association},
+	  number={just-accepted},
+	  pages={1--36},
+	  year={2020},
+	  publisher={Taylor \& Francis}
+	}
 
 Code to reproduce the numerical experiments in the paper is included in supplementary folder.
 
