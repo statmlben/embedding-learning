@@ -1,7 +1,7 @@
 Embedding learning
 ============
 
-This is a demonstration about implements of the paper "Embedding learning" by Ben Dai, Xiaotong Shen and Junhui Wang in TensorFlow (tensorflow_demo.py) and Keras (keras_demo.py). 
+This is a demonstration about implements of the paper `Embedding learning <https://www.tandfonline.com/doi/abs/10.1080/01621459.2020.1775614>`_ by Ben Dai, Xiaotong Shen and Junhui Wang in TensorFlow (tensorflow_demo.py) and Keras (keras_demo.py). 
 
 .. code-block:: tex
 
@@ -15,9 +15,9 @@ This is a demonstration about implements of the paper "Embedding learning" by Be
 	  publisher={Taylor \& Francis}
 	}
 
-Code to reproduce the numerical experiments in the paper is included in supplementary folder.
+Code to reproduce the numerical experiments in the paper are included in ``./supplementary`` folder.
 
-This project was created by `Ben Dai <http://users.stat.umn.edu/~bdai/>`_. If there is any problem and suggestion please contact me via <bdai@umn.edu>.
+This project was created by `Ben Dai <https://www.bendai.org>`_. If there is any problem and suggestion please contact me via <bdai@umn.edu>.
 
 Dependencies
 ~~~~~~~~~~~~
