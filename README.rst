@@ -3,7 +3,7 @@ Embedding learning
 
 This is a demonstration about implements of the paper "Embedding learning" by Ben Dai, Xiaotong Shen and Junhui Wang in TensorFlow (tensorflow_demo.py) and Keras (keras_demo.py). 
 
-.. code-block:: bib
+.. code-block:: tex
 	@article{dai2020embedding,
 	  title={Embedding learning},
 	  author={Dai, Ben and Shen, Xiaotong and Wang, Junhui},
