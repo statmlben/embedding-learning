@@ -1,7 +1,19 @@
 Embedding learning
 ============
 
-This is a demonstration about implements of the paper "Embedding learning" by Ben Dai, Xiaotong Shen and Junhui Wang  in TensorFlow (tensorflow_demo.py) and Keras (keras_demo.py). 
+This is a demonstration about implements of the paper "Embedding learning" by Ben Dai, Xiaotong Shen and Junhui Wang in TensorFlow (tensorflow_demo.py) and Keras (keras_demo.py). 
+
+``` bib
+@article{dai2020embedding,
+  title={Embedding learning},
+  author={Dai, Ben and Shen, Xiaotong and Wang, Junhui},
+  journal={Journal of the American Statistical Association},
+  number={just-accepted},
+  pages={1--36},
+  year={2020},
+  publisher={Taylor \& Francis}
+}
+```
 
 Code to reproduce the numerical experiments in the paper is included in supplementary folder.
 
@@ -19,11 +31,15 @@ The codes requires:
 - Keras
 
 Core pseudo-code (Keras)
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: Python
 
 	from keras import backend as K
+	import keras
+	from keras.models import Model
+	from keras.layers import Dense, Flatten, Input, Multiply, Reshape, Embedding
+	import tensorflow as tf
 
 	## d: total number of unstrucuted data
 	## lam: tuning parameter for the embedding loss
