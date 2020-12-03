@@ -1,3 +1,5 @@
+# Python3.6, TF1.14.0, gensim3.4.0, numpy1.16.1
+
 from data_load_w2v import load_data
 import numpy as np
 import tensorflow as tf
@@ -15,7 +17,7 @@ for p in [300]:
     # weight = sparse.load_npz('weight_matrix.npz')
     embedding_method = 'googlenews'
     # init_X, y, words, vocab = load_data(p, embedding_method)
-    y, dict_emb, words = np.load('googlenew_y.npy'), np.load('dict_emb.npy'), np.load('le_lst.npy')
+    y, dict_emb, words = np.load('googlenew_y.npy', allow_pickle=True), np.load('dict_emb.npy', allow_pickle=True), np.load('le_lst.npy', allow_pickle=True)
     input_data = sparse.load_npz('input_X.npz')
     input_data = normalize(input_data, axis=1, norm='l1')
     d = len(dict_emb)
@@ -26,7 +28,7 @@ for p in [300]:
     senti_data.y = y
 
     echo_perf=[]
-    for j in range(50):
+    for j in range(20):
         train, valid, test = senti_data.split_data()
 
         # Parameters
